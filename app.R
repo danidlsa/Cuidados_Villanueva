@@ -587,7 +587,7 @@ server <- function(input, output, session) {
                 title = "Desiertos de cuidado")
   })
   
-  owm_key <- "697acba042881eaa7b4489e3ffa3e612"  
+  owm_key <- ""  
   
   owm_precip <- paste0("https://tile.openweathermap.org/map/precipitation_new/{z}/{x}/{y}.png?appid=", owm_key)
   
@@ -1154,6 +1154,7 @@ server <- function(input, output, session) {
 
 # Lanzar app
 shinyApp(ui, server)
+
 
 
 
